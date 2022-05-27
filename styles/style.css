@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+   font-family: 'Sora', sans-serif;
+   margin: 0;
+   padding: 0;
+   background-image: url(../images/background.jpg);
+}
+
+h2, h3 {
+   color: #eee
+}
+
+
+/* flexbox implementation */
+.flex-container {
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	display: flex;
+    flex-direction: column;
+	flex-grow: 1;
+}
+
+main {
+	display: flex;
+    flex-direction: row-reverse;
+    flex-grow: 1;
+	padding: 20px;
+}
+
+footer {
+	display: flex;
+    flex-direction: row;
+	flex-grow: 1;
+	padding: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: #eee;
+	background-color: rgba(0,0,0,.5);
+	color: #fff;
+}
+
+/* nav */
+nav li {
+	display: inline;
+	margin-right: 30px;
+}
+
+nav {
+	background-color: rgba(0,0,0,.5);
+	color: #fff;
+	padding: 5px;
+}
+
+nav a {
+   font-size: 20px;
+   font-weight: 800;
+   color: #eee;
+}
+
+nav a:hover {
+	text-decoration: none;
+	transition: background-color 0.8s ease;
+}
+
+/* profile in aside content */
+.profile header {
+	text-align: center;
+}
+
+.featured-image {
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.profile figure {
+	margin: 0 auto;
+}
+
+.profile img {
+	width: 150px;
+}
+
+.profile section h3 {
+	text-align: center;
+}
+
+/* content beautification */
+.card {
+	box-shadow: 0 20px 30px 0 rgba(0,0,0,0.6);
+	border-radius: 40px;
+	padding: 20px;
+	margin-top: 20px;
+	background-color: rgba(0,0,0,.5);
+	color: #fff;
+}
+
+#bullet-style {
+	text-align: center;
+}
+
+#content {
+	width: 75%;
+	margin-left: 10px;
+}
+
+/* jumbotron beautification */
+.jumbotron {
+	font-size: 20px;
+	padding: 60px;
+	background-color: rgba(0,0,0,.5);
+	color: #eee;
+	text-align: center;
+}
+
+/* aside width and padding settings */
+aside {
+	width: 25%;
+	padding-left: 20px;
+}
+
+/* media query to adaptate with other sizes of screen*/
+
+@media screen and (max-width: 1000px) {
+    #content,
+	aside {
+		width: 100%;
+		padding: 0;
+	}
+
+	main {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		padding: 20px;
+	}
+}
+
+/* Slider */
+.slider-container {
+  position: relative;
+}
+
+.left, .right {
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	width: auto;
+	padding: 16px;
+	color: #EEEEEE;
+	font-weight: bold;
+	font-size: 75px;
+	transition: 0.8s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.slider {
+	display: none;
+  }  
+
+.slider img {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	width: 30%;
+}
+
+.slider2 {
+	display: none;
+  }  
+
+.slider2 img {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	width: 30%;
+}
+
+.right {
+	border-radius: 5px 0 0 5px;
+	right: 0;
+}
+
+.left:hover, .right:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.img-caption {
+	color: #000;
+	font-size: 20px;
+	width: 100%;
+	text-align: center;
+	padding: 10px 15px;
+	position: absolute;
+	bottom: 30px;
+	
+}
+
+.img-source {
+	color: #fff;
+	font-size: 10px;
+	width: 100%;
+	text-align: center;
+	padding: 10px 15px;
+	position: absolute;
+	bottom: 10px;
+}
+
+.bullet {
+  height: 20px;
+  width: 20px;
+  background-color: #bcbcbc;
+  border-radius: 75%;
+  display: inline-block;
+  transition: background-color 0.8s ease;
+  cursor: pointer;
+}
+.bullet2 {
+	height: 20px;
+	width: 20px;
+	background-color: #bcbcbc;
+	border-radius: 75%;
+	display: inline-block;
+	transition: background-color 0.8s ease;
+	cursor: pointer;
+  }
+
+.active, .bullet:hover {
+  background-color: #717171;
+}

@@ -1,7 +1,167 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+	<title>Portfolio Epata Tuah</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+	<!-- Flexbox for layout-->
+	<div class="flex-container">
+		<header>
+			<div class="jumbotron">
+				<h1>HI. I'm Epata. I am an Informatics Engineering undergraduate student in Bandung Institute of Technology (ITB)</h1>
+				<p>See my software development experiences below!</p>
+			</div>
+			<nav>
+				<ul>
+				<li><a href="#jadwalid">Jadwal.id</a></li>
+				<li><a href="#perludilindungi">Perlu Dilindungi</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div id="content">
+				<article id="jadwalid" class="card">
+					<h2>Jadwal.id</h2>
+					<!-- slider html implementation-->
+					<div class="slider-container">
+						<div class="slider">
+							<img src="images/j1.png" alt="login-register-page">
+							<figcaption class="img-caption">Halaman login dan register</figcaption>
+						</div>
+					
+						<div class="slider">
+							<img src="images/j2.png" alt="calendar-page">
+							<figcaption class="img-caption">Halaman kalendar</figcaption>
+						</div>
+					
+						<div class="slider">
+							<img src="images/j3.png" alt="create-event-page">
+							<figcaption class="img-caption">Halaman membuat event</figcaption>
+						</div>
+
+						<div class="slider">
+							<img src="images/j4.png" alt="reminder-page">
+							<figcaption class="img-caption">Halaman reminder dari suatu event</figcaption>
+						</div>
+					
+						<a class="left" onclick="switchSlides(-1)">&#8592;</a>
+						<a class="right" onclick="switchSlides(1)">&#8594;</a>
+					</div>
+					<br>
+					<div id="bullet-style">
+						<span class="bullet" onclick="ongoingSlide(0)"></span>
+						<span class="bullet" onclick="ongoingSlide(1)"></span>
+						<span class="bullet" onclick="ongoingSlide(2)"></span>
+						<span class="bullet" onclick="ongoingSlide(3)"></span>
+					</div>
+					<ul>
+						<li>Participated in the team of 5 persons on the project based on Agile development practices for 3 months with a total of 6 sprints of efforts to create a Golang-Flutter android application named Jadwal.id featuring scheduling calendar services with events and reminders management.
+						</li>
+						<br>
+						<li>Became scrum master for the second sprint and last sprint with respected 2 weeks for each sprint.
+						</li>
+						<br>
+						<li>Developed the back-end part of the application, such as registering page, changing event data feature, all reminders CRUD feature, and the front-end part which specified changing reminders feature. 
+						</li>
+						<br>
+						<li>Implemented Swagger OpenAPI for the software API Endpoint documentation.
+						</li>
+						<br>
+						<li>Utilized SonarQube to measure software metrics achieving PASSED status including 0 bugs, 0 vulnerabilities, 0 security hotspots, and an A score of maintainability.
+						</li>
+					</ul>
+				</article> 
+				<article id="perludilindungi" class="card">
+					<h2>Perlu Dilindungi</h2>
+					<!-- slider2 html implementation-->
+					<div class="slider-container">
+						<div class="slider2">
+							<img src="images/p1.jpeg" alt="landing-page">
+							<figcaption class="img-caption">Halaman Berita COVID-19</figcaption>
+						</div>
+					
+						<div class="slider2">
+							<img src="images/p2.jpeg" alt="cari-faskes-page">
+							<figcaption class="img-caption">Halaman Cari Faskes</figcaption>
+						</div>
+					
+						<div class="slider2">
+							<img src="images/p3.jpeg" alt="bookmark-page">
+							<figcaption class="img-caption">Halaman Bookmark Faskes</figcaption>
+						</div>
+
+						<div class="slider2">
+							<img src="images/p4.jpeg" alt="reminder-page">
+							<figcaption class="img-caption">Halaman Check-in</figcaption>
+						</div>
+					
+						<a class="left" onclick="switchSlides2(-1)">&#8592;</a>
+						<a class="right" onclick="switchSlides2(1)">&#8594;</a>
+					</div>
+					<br>
+					<div id="bullet-style">
+						<span class="bullet2" onclick="ongoingSlide2(0)"></span>
+						<span class="bullet2" onclick="ongoingSlide2(1)"></span>
+						<span class="bullet2" onclick="ongoingSlide2(2)"></span>
+						<span class="bullet2" onclick="ongoingSlide2(3)"></span>
+					</div>
+					<ul>
+						<li>Participated in the team of 3 on the project for 2 months time to create an android application named Perlu Dilindungi using Kotlin on purpose to show COVID-19 news, vaccination informations, and check-in mechanism.
+						</li>
+						<br>
+						<li>Developed the specification such as showing list of vaccinations health facilities and health facilities bookmark with Kotlin RecyclerView and Room LiveData utilization.
+						</li>
+					</ul>
+				</article> 
+			</div>
+			<aside>
+				<article class="profile card">
+					<header>
+						<h2>Developer</h2>
+						<figure>
+							<img src="images/foto-epata-tuah.jpg">
+						</figure>
+					</header>
+					<section>
+						<h3>Identity</h3>
+						<table>
+							<tr>
+								<th>Name</th>
+								<td>Epata Tuah</td>
+							</tr>
+							<tr>
+								<th>NIM</th>
+								<td>13519120</td>
+							</tr>
+							<tr>
+								<th>Place, Date of Birth</th>
+								<td>Palangka Raya, 18 September 2001</td>
+							</tr>
+							<tr>
+								<th>Address</th>
+								<td>Kp. Artabahana Kv.17 Cibaligo, Kab. Bandung Barat, Jawa Barat</td>
+							</tr>
+							<tr>
+								<th>University</th>
+								<td>Bandung Institute of Technology (ITB)</td>
+							</tr>
+							<tr>
+								<th>Phone Number</th>
+								<td>+62 852 2136 0481</td>
+							</tr>
+						</table>
+					</section>
+				</article>
+			</aside>
+		</main>
+		<footer>
+			<p>My Portfolio - created by Epata Tuah</p>
+		</footer>
+	</div>
+	<script src="scripts/slides.js"></script>
 </body>
 </html>
