@@ -171,6 +171,7 @@ aside {
 	display: block;
   	margin-left: auto;
   	margin-right: auto;
+	margin-bottom: 20px;
 	width: 30%;
 }
 
@@ -182,6 +183,7 @@ aside {
 	display: block;
   	margin-left: auto;
   	margin-right: auto;
+	margin-bottom: 20px;
 	width: 30%;
 }
 
@@ -195,13 +197,11 @@ aside {
 }
 
 .img-caption {
-	color: #000;
+	color: #eee;
 	font-size: 20px;
 	width: 100%;
 	text-align: center;
-	padding: 10px 15px;
 	position: absolute;
-	bottom: 30px;
 	
 }
 
@@ -221,6 +221,7 @@ aside {
   background-color: #bcbcbc;
   border-radius: 75%;
   display: inline-block;
+  margin-top: 20px;
   transition: background-color 0.8s ease;
   cursor: pointer;
 }
@@ -230,6 +231,7 @@ aside {
 	background-color: #bcbcbc;
 	border-radius: 75%;
 	display: inline-block;
+	margin-top: 20px;
 	transition: background-color 0.8s ease;
 	cursor: pointer;
   }
