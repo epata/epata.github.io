@@ -86,7 +86,7 @@ nav a:hover {
 }
 
 .profile img {
-	width: 150px;
+	width: 250px;
 }
 
 .profile section h3 {
@@ -172,7 +172,6 @@ aside {
   	margin-left: auto;
   	margin-right: auto;
 	margin-bottom: 20px;
-	width: 30%;
 }
 
 .slider2 {
