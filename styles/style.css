@@ -47,6 +47,13 @@ footer {
 	color: #fff;
 }
 
+.descriptions-card {
+	display: flex;
+}
+.descriptions-card ul {
+	padding-right: 20px;
+}
+
 /* nav */
 nav li {
 	display: inline;
