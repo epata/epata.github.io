@@ -15,6 +15,16 @@ h2, h3 {
    color: #eee
 }
 
+a {
+	color: #9BA3EB;
+}
+  
+a:hover {
+	color: #9BA3EB;
+	text-decoration: none;
+}
+  
+
 
 /* flexbox implementation */
 .flex-container {
